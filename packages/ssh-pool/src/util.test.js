@@ -1,5 +1,5 @@
 import * as childProcess from 'child_process'
-import { series, exec } from './util'
+import { series, exec } from './util.js'
 
 jest.mock('child_process')
 

@@ -1,9 +1,4 @@
-import Connection from './Connection'
-import ConnectionPool from './ConnectionPool'
-import { exec } from './util'
-import { isRsyncSupported } from './commands/rsync'
-
-exports.Connection = Connection
-exports.ConnectionPool = ConnectionPool
-exports.exec = exec
-exports.isRsyncSupported = isRsyncSupported
+export { default as Connection} from './Connection.js'
+export { default as ConnectionPool } from './ConnectionPool.js'
+export { exec } from './util.js'
+export { isRsyncSupported } from './commands/rsync.js'

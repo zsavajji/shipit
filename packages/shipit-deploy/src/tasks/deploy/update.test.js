@@ -1,10 +1,10 @@
 import moment from 'moment'
 import _ from 'lodash'
 import rmfr from 'rmfr'
-import path from 'path2/posix'
+import path from 'path2/posix/index.js'
 import Shipit from 'shipit-cli'
-import { start } from '../../../tests/util'
-import updateTask from './update'
+import { start } from '../../../tests/util.js'
+import updateTask from './update.js'
 
 jest.mock('rmfr')
 

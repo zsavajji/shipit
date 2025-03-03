@@ -1,7 +1,7 @@
 import Shipit from 'shipit-cli'
-import path from 'path2/posix'
-import { start } from '../../../tests/util'
-import finishTask from './finish'
+import path from 'path2/posix/index.js'
+import { start } from '../../../tests/util.js'
+import finishTask from './finish.js'
 
 describe('rollback:finish task', () => {
   let shipit

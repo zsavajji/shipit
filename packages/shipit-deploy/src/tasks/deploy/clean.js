@@ -1,6 +1,6 @@
 /* eslint-disable prefer-template */
 import utils from 'shipit-utils'
-import extendShipit from '../../extendShipit'
+import extendShipit from '../../extendShipit.js'
 
 /**
  * Clean task.

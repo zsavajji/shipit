@@ -1,4 +1,4 @@
-import { formatTarCommand } from './tar'
+import { formatTarCommand } from './tar.js'
 
 describe('tar', () => {
   describe('#formatTarCommand', () => {

@@ -1,5 +1,5 @@
-import { joinCommandArgs } from './util'
-import { deprecateV3 } from '../util'
+import { joinCommandArgs } from './util.js'
+import { deprecateV3 } from '../util.js'
 
 const SUDO_REGEXP = /sudo\s/
 

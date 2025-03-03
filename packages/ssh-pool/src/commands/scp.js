@@ -1,4 +1,4 @@
-import { joinCommandArgs, requireArgs } from './util'
+import { joinCommandArgs, requireArgs } from './util.js'
 
 export function formatScpCommand({ port, key, src, dest }) {
   requireArgs(['src', 'dest'], { src, dest }, 'scp')

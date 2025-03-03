@@ -1,4 +1,4 @@
-import { joinCommandArgs, requireArgs } from './util'
+import { joinCommandArgs, requireArgs } from './util.js'
 
 function formatExcludes(excludes) {
   return excludes.reduce(

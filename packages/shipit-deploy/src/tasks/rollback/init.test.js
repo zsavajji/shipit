@@ -1,6 +1,6 @@
 import Shipit from 'shipit-cli'
-import { start } from '../../../tests/util'
-import initTask from './init'
+import { start } from '../../../tests/util.js'
+import initTask from './init.js'
 
 describe('rollback:init task', () => {
   let shipit

@@ -1,4 +1,4 @@
-import { deprecateV3 } from './util'
+import { deprecateV3 } from './util.js'
 
 export function parseRemote(remote) {
   if (remote && remote.host) return remote

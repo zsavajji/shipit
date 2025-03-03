@@ -1,6 +1,6 @@
 import Shipit from 'shipit-cli'
-import { start } from '../../../tests/util'
-import logTask from './log'
+import { start } from '../../../tests/util.js'
+import logTask from './log.js'
 
 describe('pending:log task', () => {
   let shipit

@@ -1,6 +1,6 @@
 process.env.FORCE_COLOR=0;
 
-module.exports = {
+export default {
   testEnvironment: 'node',
   roots: ['packages'],
   coverageDirectory: './coverage/',

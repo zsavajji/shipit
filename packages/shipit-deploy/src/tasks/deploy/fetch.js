@@ -3,7 +3,7 @@ import fs from 'fs'
 import utils from 'shipit-utils'
 import chalk from 'chalk'
 import tmp from 'tmp-promise'
-import extendShipit from '../../extendShipit'
+import extendShipit from '../../extendShipit.js'
 
 /**
  * Fetch task.

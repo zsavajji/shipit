@@ -2,8 +2,8 @@
 import stdMocks from 'std-mocks'
 import { exec } from 'child_process'
 import { __setPaths__ } from 'which'
-import * as util from './util'
-import Connection from './Connection'
+import * as util from './util.js'
+import Connection from './Connection.js'
 
 jest.mock('child_process')
 jest.mock('which')

@@ -1,5 +1,5 @@
-import { joinCommandArgs, requireArgs } from './util'
-import { formatRawCommand } from './raw'
+import { joinCommandArgs, requireArgs } from './util.js'
+import { formatRawCommand } from './raw.js'
 
 export function formatRmCommand({ asUser, file }) {
   requireArgs(['file'], { file }, 'rm')

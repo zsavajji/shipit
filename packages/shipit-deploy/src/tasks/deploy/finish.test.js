@@ -1,6 +1,6 @@
 import Shipit from 'shipit-cli'
-import { start } from '../../../tests/util'
-import finishTask from './finish'
+import { start } from '../../../tests/util.js'
+import finishTask from './finish.js'
 
 describe('deploy:finish task', () => {
   let shipit

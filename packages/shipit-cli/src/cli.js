@@ -3,9 +3,11 @@ import chalk from 'chalk'
 import interpret from 'interpret'
 import v8flags from 'v8flags'
 import Liftoff from 'liftoff'
-import program from 'commander'
-import Shipit from './Shipit'
-import pkg from '../package.json'
+import { Command } from 'commander'
+import Shipit from './shipit.js'
+import pkg from '../package.json' with { type: "json" }
+
+const program = new Command()
 
 function exit(code) {
   if (process.platform === 'win32' && process.stdout.bufferSize) {
@@ -21,11 +23,13 @@ function exit(code) {
 program
   .version(pkg.version)
   .allowUnknownOption()
+  .allowExcessArguments()
   .usage('<environment> <tasks...>')
   .option('--shipitfile <file>', 'Specify a custom shipitfile to use')
   .option('--require <files...>', 'Script required before launching Shipit')
   .option('--tasks', 'List available tasks')
   .option('--environments', 'List available environments')
+
 
 program.parse(process.argv)
 
@@ -60,12 +64,9 @@ async function asyncInvoke(env) {
   const shipit = new Shipit({ environment })
 
   try {
-    /* eslint-disable global-require, import/no-dynamic-require */
-    const module = require(env.configPath)
-    /* eslint-enable global-require, import/no-dynamic-require */
-    const initialize =
-      typeof module.default === 'function' ? module.default : module
-    await initialize(shipit)
+    const { default: initialize } = await import(env.configPath)
+
+    initialize(shipit)
   } catch (error) {
     console.error(chalk.red('Could not load async config'))
     throw error
@@ -101,7 +102,7 @@ const cli = new Liftoff({
   extensions: interpret.jsVariants,
   v8flags,
 })
-cli.launch(
+cli.prepare(
   {
     configPath: program.shipitfile,
     require: program.require,

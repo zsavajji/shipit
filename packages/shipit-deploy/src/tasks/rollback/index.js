@@ -1,8 +1,8 @@
 import utils from 'shipit-utils'
-import initTask from './init'
-import fetchTask from '../deploy/fetch'
-import cleanTask from '../deploy/clean'
-import finishTask from './finish'
+import initTask from './init.js'
+import fetchTask from '../deploy/fetch.js'
+import cleanTask from '../deploy/clean.js'
+import finishTask from './finish.js'
 
 /**
  * Rollback task.

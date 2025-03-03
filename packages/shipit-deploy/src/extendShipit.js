@@ -1,4 +1,4 @@
-import path from 'path2/posix'
+import path from 'path2/posix/index.js'
 import _ from 'lodash'
 import util from 'util'
 

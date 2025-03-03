@@ -1,8 +1,8 @@
 import Shipit from 'shipit-cli'
 import fs from 'fs'
 import tmp from 'tmp-promise'
-import { start } from '../../../tests/util'
-import fetchTask from './fetch'
+import { start } from '../../../tests/util.js'
+import fetchTask from './fetch.js'
 
 jest.mock('tmp-promise', () => ({
   dir: jest.fn(),

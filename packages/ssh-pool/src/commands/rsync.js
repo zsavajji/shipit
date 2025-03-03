@@ -1,5 +1,5 @@
 import which from 'which'
-import { wrapCommand, joinCommandArgs, requireArgs } from './util'
+import { wrapCommand, joinCommandArgs, requireArgs } from './util.js'
 
 export async function isRsyncSupported() {
   return new Promise(resolve => which('rsync', err => resolve(!err)))

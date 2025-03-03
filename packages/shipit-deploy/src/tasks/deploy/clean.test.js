@@ -1,6 +1,6 @@
 import Shipit from 'shipit-cli'
-import { start } from '../../../tests/util'
-import cleanTask from './clean'
+import { start } from '../../../tests/util.js'
+import cleanTask from './clean.js'
 
 describe('deploy:clean task', () => {
   let shipit

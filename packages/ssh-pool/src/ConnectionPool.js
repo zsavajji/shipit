@@ -1,5 +1,5 @@
 /* eslint-disable func-names */
-import Connection from './Connection'
+import Connection from './Connection.js'
 
 class ConnectionPool {
   /**

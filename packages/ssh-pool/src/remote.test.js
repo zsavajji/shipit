@@ -1,4 +1,4 @@
-import * as util from './util'
+import * as util from './util.js'
 import { parseRemote, formatRemote } from './remote'
 
 describe('SSH remote', () => {

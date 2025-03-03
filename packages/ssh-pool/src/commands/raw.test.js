@@ -1,5 +1,5 @@
-import * as util from '../util'
-import { formatRawCommand } from './raw'
+import * as util from '../util.js'
+import { formatRawCommand } from './raw.js'
 
 describe('raw', () => {
   beforeEach(() => {

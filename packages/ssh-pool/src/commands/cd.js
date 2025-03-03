@@ -1,5 +1,5 @@
 import path from 'path'
-import { joinCommandArgs, requireArgs } from './util'
+import { joinCommandArgs, requireArgs } from './util.js'
 
 const isWin = /^win/.test(process.platform)
 

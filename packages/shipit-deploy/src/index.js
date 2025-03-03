@@ -1,9 +1,9 @@
-import deploy from './tasks/deploy'
-import rollback from './tasks/rollback'
-import pending from './tasks/pending'
+import deploy from './tasks/deploy/index.js'
+import rollback from './tasks/rollback/index.js'
+import pending from './tasks/pending/index.js'
 
-module.exports = shipit => {
+export default shipit => {
   deploy(shipit)
   rollback(shipit)
   pending(shipit)
-}
+};

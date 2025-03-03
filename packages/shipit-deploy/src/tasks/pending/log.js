@@ -1,6 +1,6 @@
 import utils from 'shipit-utils'
 import chalk from 'chalk'
-import extendShipit from '../../extendShipit'
+import extendShipit from '../../extendShipit.js'
 
 /**
  * Log task.

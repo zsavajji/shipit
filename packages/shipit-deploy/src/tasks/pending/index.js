@@ -1,6 +1,6 @@
 import utils from 'shipit-utils'
-import logTask from './log'
-import fetchTask from '../deploy/fetch'
+import logTask from './log.js'
+import fetchTask from '../deploy/fetch.js'
 
 /**
  * Pending task.

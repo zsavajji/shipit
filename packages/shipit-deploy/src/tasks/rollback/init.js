@@ -1,6 +1,6 @@
 import utils from 'shipit-utils'
-import path from 'path2/posix'
-import extendShipit from '../../extendShipit'
+import path from 'path2/posix/index.js'
+import extendShipit from '../../extendShipit.js'
 
 /**
  * Update task.

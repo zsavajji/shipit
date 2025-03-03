@@ -3,7 +3,7 @@ import {
   joinCommandArgs,
   wrapCommand,
   requireArgs,
-} from './util'
+} from './util.js'
 
 describe('util', () => {
   describe('#escapeCommand', () => {

@@ -1,8 +1,8 @@
 import { __setPaths__ } from 'which'
 import { exec } from 'child_process'
-import * as util from './util'
-import Connection from './Connection'
-import ConnectionPool from './ConnectionPool'
+import * as util from './util.js'
+import Connection from './Connection.js'
+import ConnectionPool from './ConnectionPool.js'
 
 jest.mock('which')
 jest.mock('child_process')

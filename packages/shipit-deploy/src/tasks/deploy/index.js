@@ -1,10 +1,10 @@
 import utils from 'shipit-utils'
-import init from './init'
-import fetch from './fetch'
-import update from './update'
-import publish from './publish'
-import clean from './clean'
-import finish from './finish'
+import init from './init.js'
+import fetch from './fetch.js'
+import update from './update.js'
+import publish from './publish.js'
+import clean from './clean.js'
+import finish from './finish.js'
 
 /**
  * Deploy task.

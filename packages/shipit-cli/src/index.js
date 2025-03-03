@@ -1,3 +1,3 @@
-import Shipit from './Shipit'
+import Shipit from './shipit.js'
 
-module.exports = Shipit
+export default Shipit;

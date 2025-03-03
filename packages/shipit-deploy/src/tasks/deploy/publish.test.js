@@ -1,7 +1,7 @@
-import path from 'path2/posix'
+import path from 'path2/posix/index.js'
 import Shipit from 'shipit-cli'
-import { start } from '../../../tests/util'
-import publishTask from './publish'
+import { start } from '../../../tests/util.js'
+import publishTask from './publish.js'
 
 describe('deploy:publish task', () => {
   let shipit

@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import Stream from 'mock-utf8-stream'
 import { ConnectionPool } from 'ssh-pool'
-import Shipit from './Shipit'
+import Shipit from './shipit.js'
 
 describe('Shipit', () => {
   let shipit

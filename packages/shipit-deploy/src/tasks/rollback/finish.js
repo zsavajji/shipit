@@ -1,5 +1,5 @@
 import utils from 'shipit-utils'
-import extendShipit from '../../extendShipit'
+import extendShipit from '../../extendShipit.js'
 
 /**
  * Update task.

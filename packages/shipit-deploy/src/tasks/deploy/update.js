@@ -1,12 +1,12 @@
 import utils from 'shipit-utils'
-import path from 'path2/posix'
+import path from 'path2/posix/index.js'
 import p from 'path';
 import moment from 'moment'
 import chalk from 'chalk'
 import util from 'util'
 import rmfr from 'rmfr'
 import _ from 'lodash'
-import extendShipit from '../../extendShipit'
+import extendShipit from '../../extendShipit.js'
 
 /**
  * Update task.
@@ -71,7 +71,7 @@ const updateTask = shipit => {
       if(options.copyAsDir){
         srcDirectory = srcDirectory.slice(0, -1);
       }
-      await shipit.remoteCopy(srcDirectory, shipit.releasePath, options)
+      await shipit.copyToRemote(srcDirectory, shipit.releasePath, options)
       shipit.log(chalk.green('Finished copy.'))
     }
 
